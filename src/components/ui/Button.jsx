@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "@/assets/style/scss/style.scss";
 
 function buttonRipples(e) {
   e.stopPropagation();
@@ -24,14 +25,9 @@ function buttonRipples(e) {
   }, 600);
 }
 
-function Button({ label, handleClick }) {
+function Button({ label }) {
   return (
-    <div
-      className='btn'
-      onClick={function (e) {
-        handleClick(), buttonRipples(e);
-      }}
-    >
+    <div className='btn' onClick={buttonRipples}>
       {label}
     </div>
   );

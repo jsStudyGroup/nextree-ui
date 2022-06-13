@@ -12,7 +12,7 @@
   height: calc(var(--d) * 1px);
 
   //  animated properties
-  opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
+  opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.53));
   transition: calc(var(--t, 0) * var(--ripple-duration, 600ms))
     var(--ripple-easing, linear);
   transform: translate(-50%, -50%) scale(var(--s, 1));
